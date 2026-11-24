@@ -3,7 +3,6 @@ require "fileutils"
 module Storage
   # Handles saving and retrieving data from a local folder
   class LocalAdapter
-
     # Saves real data in a local file and returns its internal filename
     def store(data)
       storage_key = SecureRandom.uuid

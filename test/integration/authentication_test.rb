@@ -2,7 +2,6 @@ require "test_helper"
 
 # Tests authentication through real API requests
 class AuthenticationTest < ActionDispatch::IntegrationTest
-
   # Checks that a request without a token is rejected
   test "request without bearer token is rejected" do
     get "/health"

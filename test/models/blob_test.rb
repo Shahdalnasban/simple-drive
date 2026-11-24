@@ -2,7 +2,6 @@ require "test_helper"
 
 # Tests the validation rules in the Blob model
 class BlobTest < ActiveSupport::TestCase
-
   # Checks that a blob is valid when it has all required information
   test "a blob with valid metadata is valid" do
     blob = Blob.new(
@@ -30,7 +29,6 @@ class BlobTest < ActiveSupport::TestCase
 
   # Checks that two blobs cannot have the same identifier
   test "a blob identifier must be unique" do
-
     # Create the first blob with this identifier
     Blob.create!(
       identifier: "same-id",

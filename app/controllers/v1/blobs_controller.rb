@@ -1,7 +1,6 @@
 require "base64"
 
 class V1::BlobsController < ApplicationController
-
   # POST /v1/blobs
   def create
     identifier = params[:id].to_s

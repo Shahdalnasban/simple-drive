@@ -1,7 +1,6 @@
 module Storage
   # Handles saving and retrieving real data from the database
   class DatabaseAdapter
-
     # Saves the real data in database_blobs
     # Returns a hidden key so we can find it later
     def store(data)
